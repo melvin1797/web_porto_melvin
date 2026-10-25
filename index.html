@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Bryan</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header & Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="logo">Bryan<span></span></a>
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#about" class="nav-link">Tentang</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#timeline" class="nav-link">Perjalanan</a>
+        <a href="#experiments" class="nav-link">Eksperimen</a>
+        <a href="#contact" class="nav-link">Kontak</a>
+      </nav>
+      <button id="theme-toggle" class="theme-btn" aria-label="Ganti tema">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section (2 Kolom) -->
+    <section id="hero" class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="pulse-dot"></span>
+            🌱 Sedang Aktif Belajar Web Dev
+          </div>
+          <p class="hero-tag">Halo semua 👋</p>
+          <h1 class="hero-title">Saya <span>Bryan</span></h1>
+          <div class="hero-typing-box">
+            <span class="typing-label">Fokus:</span>
+            <span id="typing-text" class="typing-text"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-desc">
+            Web developer pemula yang antusias mempelajari teknologi web modern. Senang mengubah baris kode menjadi tampilan antarmuka yang bersih, responsif, dan fungsional.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary">Hubungi Saya</a>
+            <a href="#experiments" class="btn btn-outline">Lihat Latihan Kode</a>
+          </div>
+        </div>
+
+        <!-- Mockup Code Editor -->
+        <div class="hero-visual">
+          <div class="code-editor">
+            <div class="editor-header">
+              <div class="editor-dots">
+                <span class="dot dot-red"></span>
+                <span class="dot dot-yellow"></span>
+                <span class="dot dot-green"></span>
+              </div>
+              <span class="editor-filename">developer.json</span>
+              <span class="editor-lang">JSON</span>
+            </div>
+            <pre class="editor-body"><code>{
+  <span class="c-key">"nama"</span>: <span class="c-str">"Bryan"</span>,
+  <span class="c-key">"peran"</span>: <span class="c-str">"Web Dev Enthusiast"</span>,
+  <span class="c-key">"status"</span>: <span class="c-str">"🌱 Aktif Belajar Setiap Hari"</span>,
+  <span class="c-key">"fokus_teknologi"</span>: [
+    <span class="c-str">"HTML5"</span>,
+    <span class="c-str">"CSS3 (Flex & Grid)"</span>,
+    <span class="c-str">"Modern JavaScript"</span>,
+    <span class="c-str">"Git Version Control"</span>
+  ],
+  <span class="c-key">"misi"</span>: <span class="c-str">"Membangun web bersih & ramah pengguna"</span>
+}</code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="section-title">Tentang Saya</h2>
+        <p class="section-subtitle">Mengenal lebih dekat langkah awal saya di dunia pemrograman.</p>
+        
+        <div class="about-card">
+          <p>
+            Perjalanan saya di dunia pemrograman web dimulai dari rasa penasaran tentang bagaimana sebuah website dibuat, dihias, dan diakses oleh banyak orang. Ketertarikan itu berkembang menjadi semangat untuk terus mengulik baris kode setiap hari.
+          </p>
+          <p>
+            Saat ini, fokus utama saya adalah memperkuat pemahaman fundamental HTML, CSS, dan logika dasar JavaScript. Saya percaya fondasi yang kuat adalah langkah terpenting sebelum melangkah ke framework yang lebih kompleks.
+          </p>
+
+          <!-- Highlight Cards -->
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <span class="highlight-icon">🎯</span>
+              <div class="highlight-text">
+                <strong>Fokus Utama</strong>
+                <span>Frontend Dasar & Responsif</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">🛠️</span>
+              <div class="highlight-text">
+                <strong>Tools Favorit</strong>
+                <span>VS Code & Git</span>
+              </div>
+            </div>
+            <div class="highlight-item">
+              <span class="highlight-icon">💡</span>
+              <div class="highlight-text">
+                <strong>Prinsip Belajar</strong>
+                <span>Konsisten Satu Baris Per Hari</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills & Learning Focus Section -->
+    <section id="skills" class="skills section">
+      <div class="container">
+        <h2 class="section-title">Skills & Fokus Belajar</h2>
+        <p class="section-subtitle">Teknologi yang sedang aktif saya pelajari beserta progres penguasaan dasarnya.</p>
+        
+        <div class="skills-grid">
+          <!-- Skill: HTML5 -->
+          <div class="skill-card">
+            <div class="skill-top">
+              <div class="skill-icon-wrapper">
+                <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 3l1.8 15.5L12 21l6.2-2.5L20 3H4z"></path>
+                  <path d="M12 7v10.5l4.5-1.8L17.5 7H12z"></path>
+                </svg>
+              </div>
+              <span class="badge badge-success">Dasar</span>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <p class="skill-desc">Struktur semantik dokumen web, form handling, dan aksesibilitas dasar.</p>
+            <div class="skill-progress">
+              <div class="progress-info">
+                <span>Pemahaman Dasar</span>
+                <span class="progress-val">75%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: CSS3 -->
+          <div class="skill-card">
+            <div class="skill-top">
+              <div class="skill-icon-wrapper">
+                <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                  <path d="M2 17l10 5 10-5"></path>
+                  <path d="M2 12l10 5 10-5"></path>
+                </svg>
+              </div>
+              <span class="badge badge-warning">Sedang Dipelajari</span>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <p class="skill-desc">Styling modern dengan Flexbox, CSS Grid, variabel tema, dan layout responsif.</p>
+            <div class="skill-progress">
+              <div class="progress-info">
+                <span>Pemahaman Dasar</span>
+                <span class="progress-val">60%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 60%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: JavaScript -->
+          <div class="skill-card">
+            <div class="skill-top">
+              <div class="skill-icon-wrapper">
+                <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 18l6-6-6-6"></path>
+                  <path d="M8 6l-6 6 6 6"></path>
+                </svg>
+              </div>
+              <span class="badge badge-warning">Sedang Dipelajari</span>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <p class="skill-desc">Manipulasi DOM, interaksi event, ES6 syntax, dan alur logika pemrograman.</p>
+            <div class="skill-progress">
+              <div class="progress-info">
+                <span>Pemahaman Dasar</span>
+                <span class="progress-val">40%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Skill: Git & GitHub -->
+          <div class="skill-card">
+            <div class="skill-top">
+              <div class="skill-icon-wrapper">
+                <svg class="skill-svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <circle cx="18" cy="18" r="3"></circle>
+                  <circle cx="6" cy="6" r="3"></circle>
+                  <path d="M6 9v12"></path>
+                  <path d="M18 9a9 9 0 0 1-9 9"></path>
+                </svg>
+              </div>
+              <span class="badge badge-success">Dasar</span>
+            </div>
+            <h3 class="skill-name">Git & GitHub</h3>
+            <p class="skill-desc">Version control dasar: init, commit, branching, dan push kode ke remote repo.</p>
+            <div class="skill-progress">
+              <div class="progress-info">
+                <span>Pemahaman Dasar</span>
+                <span class="progress-val">50%</span>
+              </div>
+              <div class="progress-bar">
+                <div class="progress-fill" style="width: 50%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Section: Perjalanan Belajar (Learning Timeline) -->
+    <section id="timeline" class="timeline-section section">
+      <div class="container">
+        <h2 class="section-title">Perjalanan Belajar</h2>
+        <p class="section-subtitle">Roadmap langkah demi langkah yang telah dan sedang saya tempuh.</p>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker done"></div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Tahap 1 • Selesai</span>
+              <h3 class="timeline-title">Mengenal HTML & Struktur Web</h3>
+              <p>Mempelajari tag semantik, hierarki dokumen web, form, tabel, dan standar keterbacaan kode.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker current"></div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Tahap 2 • Aktif Dipelajari</span>
+              <h3 class="timeline-title">Styling & Layouting dengan CSS</h3>
+              <p>Mendalami CSS Box Model, layout modern Flexbox dan Grid, CSS Variables untuk mode gelap, serta media queries responsif.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker current"></div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Tahap 3 • Sedang Berjalan</span>
+              <h3 class="timeline-title">Memahami Logika Dasar JavaScript</h3>
+              <p>Eksplorasi tipe data, conditional, looping, manipulasi elemen HTML melalui DOM API, dan event listener interaktif.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker next"></div>
+            <div class="timeline-content">
+              <span class="timeline-phase">Target Selanjutnya</span>
+              <h3 class="timeline-title">Membuat Mini Project Pertama</h3>
+              <p>Merangkai ketiga fondasi untuk membangun mini project interaktif mandiri dan mempublikasikannya ke internet.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- New Section: Latihan & Eksperimen Kode -->
+    <section id="experiments" class="experiments section">
+      <div class="container">
+        <h2 class="section-title">Latihan & Eksperimen Kode</h2>
+        <p class="section-subtitle">Eksperimen mini yang diterapkan langsung pada pembuatan website ini.</p>
+
+        <div class="experiments-grid">
+          <div class="experiment-card">
+            <div class="experiment-tag">Fitur Halaman Ini</div>
+            <h3 class="experiment-title">Toggle Dark/Light Mode Dinamis</h3>
+            <p class="experiment-desc">
+              Mengubah tema tampilan secara instan menggunakan CSS Variables, class switching, serta menyimpan preferensi pengguna di LocalStorage.
+            </p>
+            <div class="experiment-stack">
+              <span>JavaScript</span>
+              <span>CSS Variables</span>
+              <span>LocalStorage</span>
+            </div>
+          </div>
+
+          <div class="experiment-card">
+            <div class="experiment-tag">Fitur Halaman Ini</div>
+            <h3 class="experiment-title">Layout Responsif Flexbox & Grid</h3>
+            <p class="experiment-desc">
+              Penerapan CSS Grid pada kartu skill & timeline, serta Flexbox pada navbar dan form agar tampilan tetap rapi di layar ponsel maupun desktop.
+            </p>
+            <div class="experiment-stack">
+              <span>CSS Grid</span>
+              <span>Flexbox</span>
+              <span>Media Queries</span>
+            </div>
+          </div>
+
+          <div class="experiment-card">
+            <div class="experiment-tag">Fitur Halaman Ini</div>
+            <h3 class="experiment-title">Validasi & Interaksi Form Dasar</h3>
+            <p class="experiment-desc">
+              Menangani pengiriman form kontak menggunakan event listener <code>submit</code>, mencegah reload browser dengan <code>preventDefault()</code>, dan menampilkan dialog interaktif.
+            </p>
+            <div class="experiment-stack">
+              <span>DOM Events</span>
+              <span>Form Handling</span>
+              <span>Vanilla JS</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+      <div class="container">
+        <h2 class="section-title">Kontak</h2>
+        <p class="section-subtitle">Punya pertanyaan, saran, atau sekadar ingin bertegur sapa? Kirim pesan lewat form di bawah.</p>
+        
+        <div class="contact-wrapper">
+          <form id="contact-form" class="contact-form">
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" id="name" name="name" placeholder="Nama Anda" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="nama@email.com" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea id="message" name="message" rows="4" placeholder="Tulis pesan Anda..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Kirim Pesan</button>
+          </form>
+
+          <!-- Social Media Card Buttons -->
+          <div class="contact-socials">
+            <h3>Media Sosial & Tautan</h3>
+            <p>Terhubung langsung melalui akun profil berikut:</p>
+            <div class="social-cards">
+              <a href="https://github.com/melvin1797" target="_blank" rel="noopener noreferrer" class="social-card">
+                <div class="social-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path>
+                  </svg>
+                </div>
+                <div class="social-info">
+                  <strong>GitHub</strong>
+                  <span>@melvin1797</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+
+              <a href="mailto:Bryan@example.com" class="social-card">
+                <div class="social-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                    <polyline points="22,6 12,13 2,6"></polyline>
+                  </svg>
+                </div>
+                <div class="social-info">
+                  <strong>Email</strong>
+                  <span>bryannkayy@gmail.com</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="social-card">
+                <div class="social-icon">
+                  <svg viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.79v8.37H6.46v-8.37M7.86 6.57a1.62 1.62 0 1 0 0 3.24 1.62 1.62 0 0 0 0-3.24z"></path>
+                  </svg>
+                </div>
+                <div class="social-info">
+                  <strong>LinkedIn</strong>
+                  <span>Bryan Developer</span>
+                </div>
+                <span class="social-arrow">→</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; 2026 Bryan. Dibuat dengan HTML, CSS, dan Vanilla JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
